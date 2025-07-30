@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
       - name: redis
-        image: 10.10.41.8/redis/redis:latest # Jenkins will replace this with a versioned image
+        image: FULL_IMAGE_PATH  # Jenkins will replace this with the final image (e.g., 10.10.41.8/redis/redis:20250730123456)
         ports:
         - containerPort: 6379
         resources:
